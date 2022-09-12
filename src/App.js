@@ -3,10 +3,10 @@ import './App.css';
 
 function Alcometer() {
   const [weight, setWeight ] = useState("")
-  const [bottles, setBottles] = useState("")
+  const [bottles, setBottles] = useState(0)
   const [gender, setGender] = useState("male")
   const [result, setResult] = useState(0)
-  const [time, setTime] = useState("")
+  const [time, setTime] = useState(0)
 
   function Calculate(e) {
     e.preventDefault()
@@ -36,6 +36,7 @@ function Alcometer() {
         <div>
         <label>Bottles </label>
           <select name="Bottles"value={bottles} onChange={e=> setBottles(e.target.value)}>
+          <option value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -60,6 +61,7 @@ function Alcometer() {
         <div>
           <label>Time </label>
           <select name= "Time" value={time} onChange={e=> setTime(e.target.value)}>
+          <option value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -88,7 +90,7 @@ function Alcometer() {
         </div>
         <br></br>
         <div>
-          <output>{result.toFixed(1)}</output>
+          <output>{result.toFixed(2)}</output>
         </div>
         <br></br>
         <button>Calculate</button>
