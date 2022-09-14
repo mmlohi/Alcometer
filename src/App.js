@@ -27,7 +27,7 @@ function Alcometer() {
 
   return (
     <>
-      <h3>Calculating alcohol blood level</h3>
+      <h2>Calculating alcohol blood level</h2>
       <form onSubmit={Calculate}>
         <div>
           <label>Weight </label>
