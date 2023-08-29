@@ -1,3 +1,10 @@
+Simple app, which can be used to calculate blood alcohol level based on
+weight, gender, number of beer bottles drunk and time. 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
